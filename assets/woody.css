@@ -1,0 +1,747 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#topsection {
+  background-color: whitesmoke;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+#topsection .location {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#topsection .location .street {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555555;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+#topsection .location .street .symbol {
+  color: #AB7442;
+}
+#topsection .location .clockdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #555555;
+  font-size: 14px;
+}
+#topsection .location .clockdiv .clock {
+  color: #AB7442;
+}
+#topsection .rightside {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#topsection .rightside .street {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555555;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+#topsection .rightside .street .phone {
+  color: #AB7442;
+}
+#topsection .rightside div .logos {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+#topsection .rightside div .logos div {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#topsection .rightside div .logos div .logo {
+  color: #AB7442;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0px 0 50px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+}
+header .woody {
+  color: #AB7442;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header div ul {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  gap: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+header div ul li:hover {
+  color: #AB7442;
+}
+header div ul .pages:hover > .prmenu {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+header div ul .pages:hover > .prmenu li {
+  color: black;
+}
+header div ul .home {
+  color: #AB7442;
+}
+header div ul ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  width: 150px;
+  left: 310px;
+  top: 20px;
+  transition: 300ms;
+  height: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+header .get {
+  height: 10vh;
+  width: 230px;
+  background-color: #AB7442;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 500ms;
+}
+header .get:hover {
+  opacity: 0.8;
+}
+header .rmenu {
+  display: none;
+  padding-right: 40px;
+}
+header .rmenu .burger {
+  height: 6vh;
+  width: 70px;
+  border: solid rgb(211, 208, 208) 1px;
+}
+header .rmenu .burger .menu {
+  font-size: 30px;
+  color: gray;
+}
+
+#welcome {
+  background-image: url(/09-GridResponsiveWebPage/assets/secbackground.jpg);
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#welcome .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(27, 27, 27, 0.671);
+  z-index: -1;
+}
+#welcome .main {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  gap: 25px;
+  padding-top: 180px;
+}
+#welcome .main .first {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+#welcome .main .service {
+  color: white;
+  font-weight: 700;
+  font-size: 64px;
+  max-width: 1000px;
+  text-align: center;
+}
+#welcome .main .phar {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 1100px;
+  text-align: center;
+}
+#welcome .main .buttons {
+  display: flex;
+  gap: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+#welcome .main .buttons .read {
+  padding: 20px 48px;
+  background-color: #AB7442;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+}
+#welcome .main .buttons .free {
+  padding: 20px 48px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+}
+#welcome .under {
+  display: flex;
+  gap: 20px;
+  padding-top: 130px;
+}
+#welcome .under .arrows {
+  height: 50px;
+  width: 50px;
+  color: white;
+  border: solid white 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 500ms;
+}
+#welcome .under .arrows:hover {
+  border: none;
+  background-color: #AB7442;
+}
+#welcome .under .bigsq {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#welcome .under .bigsq .square {
+  width: 15px;
+  height: 15px;
+  border: solid white 1px;
+  cursor: pointer;
+}
+
+#options {
+  height: 40vh;
+  font-family: "Open Sans", sans-serif;
+}
+#options .main {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 150px;
+}
+#options .main .first {
+  max-width: 300px;
+}
+#options .main .first .lilmain {
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+}
+#options .main .first .lilmain .profile {
+  height: 65px;
+  width: 65px;
+  background-color: whitesmoke;
+  color: #AB7442;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#options .main .first .lilmain .number {
+  color: whitesmoke;
+  font-size: 80px;
+  font-weight: 700;
+}
+#options .main .first .text {
+  font-weight: 700;
+  font-size: 18px;
+}
+#options .main .second {
+  max-width: 300px;
+}
+#options .main .second .lilmain {
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+}
+#options .main .second .lilmain .profile {
+  height: 65px;
+  width: 65px;
+  background-color: whitesmoke;
+  color: #AB7442;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#options .main .second .lilmain .number {
+  color: whitesmoke;
+  font-size: 80px;
+  font-weight: 700;
+}
+#options .main .second .text {
+  font-weight: 600;
+  font-size: 18px;
+}
+#options .main .third {
+  max-width: 300px;
+}
+#options .main .third .lilmain {
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+}
+#options .main .third .lilmain .profile {
+  height: 65px;
+  width: 65px;
+  background-color: whitesmoke;
+  color: #AB7442;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#options .main .third .lilmain .number {
+  color: whitesmoke;
+  font-size: 80px;
+  font-weight: 700;
+}
+#options .main .third .text {
+  font-weight: 600;
+  font-size: 18px;
+}
+#options .main .fourth {
+  max-width: 300px;
+}
+#options .main .fourth .lilmain {
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+}
+#options .main .fourth .lilmain .profile {
+  height: 65px;
+  width: 65px;
+  background-color: whitesmoke;
+  color: #AB7442;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#options .main .fourth .lilmain .number {
+  color: whitesmoke;
+  font-size: 80px;
+  font-weight: 700;
+}
+#options .main .fourth .text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#aboutus {
+  background-color: whitesmoke;
+  height: 75vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+}
+#aboutus .image img {
+  height: 75vh;
+  width: 750px;
+}
+#aboutus .main {
+  padding: 100px 0px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+#aboutus .main .about {
+  padding-left: 45px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #353535;
+}
+#aboutus .main .pharagraph {
+  color: #555555;
+  padding-left: 45px;
+}
+#aboutus .main .lilmain {
+  display: flex;
+  justify-content: space-around;
+}
+#aboutus .main .lilmain .logobox {
+  display: flex;
+  gap: 30px;
+}
+#aboutus .main .lilmain .logobox .happy {
+  display: flex;
+  flex-direction: column;
+}
+#aboutus .main .lilmain .logobox .happy .number {
+  color: #AB7442;
+  font-size: 32px;
+  font-weight: 700;
+}
+#aboutus .main .lilmain .logobox .icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AB7442;
+  margin-top: 10px;
+}
+#aboutus .main div button {
+  margin-left: 45px;
+  background-color: #AB7442;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 300ms;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#aboutus .main div button:hover {
+  opacity: 0.8;
+}
+
+#ourservices {
+  height: 140vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 45px;
+}
+#ourservices .name {
+  font-size: 48px;
+  font-weight: 800;
+  color: #353535;
+}
+#ourservices .main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 15px;
+}
+#ourservices .main .card {
+  width: 375px;
+  height: 420px;
+  border: solid whitesmoke 4px;
+}
+#ourservices .main .card div .general {
+  font-size: 24px;
+  font-weight: 600;
+}
+#ourservices .main .card div .text {
+  color: #555555;
+}
+#ourservices .main .card div .more {
+  color: #AB7442;
+  font-weight: 500;
+  cursor: pointer;
+}
+#ourservices .main .card div .more:hover {
+  color: brown;
+}
+#ourservices .main .card img {
+  width: 375px;
+  height: 230px;
+}
+#ourservices .main .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+#whychoose {
+  margin-top: 50px;
+  height: 70vh;
+  display: flex;
+  background-color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+#whychoose .main {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+#whychoose .main .why {
+  padding: 70px 0 0 70px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #353535;
+}
+#whychoose .main .phar {
+  color: #555555;
+  padding: 0 0 0 70px;
+}
+#whychoose .main .lilmain {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#whychoose .main .lilmain .solilmain {
+  display: flex;
+  justify-content: space-around;
+}
+#whychoose .main .lilmain .solilmain .logobox {
+  display: flex;
+  gap: 30px;
+}
+#whychoose .main .lilmain .solilmain .logobox .happy {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  gap: 10px;
+}
+#whychoose .main .lilmain .solilmain .logobox .happy .service {
+  font-weight: 600;
+  font-size: 18px;
+}
+#whychoose .main .lilmain .solilmain .logobox .happy .number {
+  color: #555555;
+}
+#whychoose .main .lilmain .solilmain .logobox .icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AB7442;
+  margin-top: 10px;
+}
+#whychoose img {
+  height: 70vh;
+  width: 750px;
+}
+
+#freequote {
+  height: 80vh;
+  margin-top: 100px;
+  background-color: whitesmoke;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+#freequote img {
+  height: 80vh;
+  width: 50%;
+}
+#freequote .main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#freequote .main .div input {
+  width: 100px;
+  height: 100px;
+}
+#freequote .main .free {
+  padding: 100px 0 0 70px;
+  font-size: 48px;
+  font-weight: 750;
+  color: #353535;
+}
+#freequote .main .phar {
+  color: #555555;
+  padding: 0 0 0 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  #aboutus .image img {
+    width: auto;
+  }
+  #ourservices .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  #whychoose {
+    margin-top: 900px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #topsection {
+    display: none;
+  }
+  .navbarlist {
+    display: none;
+  }
+  .rmenu {
+    display: block !important;
+  }
+  #options .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  #aboutus {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutus .image img {
+    width: auto;
+  }
+  #whychoose {
+    margin-top: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #whychoose img {
+    height: 200px;
+    width: 500px;
+    margin-top: 100px;
+  }
+  #whychoose .main {
+    width: 500px;
+  }
+  #ourservices {
+    margin-top: 500px;
+  }
+  #ourservices .main {
+    grid-template-columns: 1fr;
+  }
+  #freequote {
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #topsection {
+    display: none;
+  }
+  .navbarlist {
+    display: none;
+  }
+  .rmenu {
+    display: block !important;
+  }
+  .service {
+    font-size: 32px !important;
+  }
+  #options .main {
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+  #aboutus {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  #aboutus .image img {
+    width: 250px;
+    height: 30vh;
+  }
+  #ourservices {
+    margin-top: 500px;
+  }
+  #ourservices .main {
+    grid-template-columns: 1fr;
+  }
+  #whychoose {
+    margin-top: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #whychoose img {
+    height: 180px;
+    width: 350px;
+    margin-top: 100px;
+  }
+  #whychoose .logos .lilmain .solilmain {
+    display: flex;
+    flex-direction: column;
+  }
+  #whychoose .main {
+    width: 300px;
+  }
+  #whychoose .main .why {
+    font-size: 20px;
+    padding: 70px 0 0 70px;
+    font-weight: 700;
+    color: #353535;
+  }
+  #whychoose .main .phar {
+    color: #555555;
+    padding: 0 0 0 70px;
+  }
+  #freequote {
+    margin-top: 500px;
+  }
+  #freequote .main .free {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=woody.css.map */
